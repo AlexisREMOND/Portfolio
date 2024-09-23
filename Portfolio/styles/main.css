@@ -6,7 +6,7 @@
 
 a {
     text-decoration: none;
-    color: white !important;
+    color: #61dafb !important;
     font-weight: 500;
 }
 
@@ -25,13 +25,14 @@ hr {
 }
 
 #MainMenu {
-    display: none; /* Hiding the MainMenu */
+    display: none;
 }
 
 footer {
-    display: none; /* Hiding the footer */
+    display: none;
 }
 
 header {
-    display: none; /* Hiding the header */
+    display: none;
 }
+

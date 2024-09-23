@@ -20,13 +20,19 @@ DESCRIPTION ="""
 Bienvenue sur mon Portfolio."""
 
 EMAIL = "remond.alexis@yahoo.com"
+LINKEDIN = "https://www.linkedin.com/in/alexis-remond-021818206/"
+GITHUB = "https://github.com/AlexisREMOND"
+
 SOCIAL_MEDIA = {
     "Linkedin" : "https://www.linkedin.com/in/alexis-remond-021818206/",
     "Github" : "https://github.com/AlexisREMOND"
 }
 
+
 CERTIFICATS = {
-    "MACHINE LEARNING IN PYTHON WITH SCIKIT-LEARN" : "https://openbadgepassport.com/app/badge/info/520881"
+    "MACHINE LEARNING IN PYTHON WITH SCIKIT-LEARN" : "https://openbadgepassport.com/app/badge/info/520881",
+    "GOOGLE ADS SEARCH CERTIFICATION" : "https://skillshop.credential.net/81cce6c2-c2a2-401e-b0bf-84678f38096f",
+    "GOOGLE ANALYTICS CERTIFICATION" : "https://skillshop.credential.net/2ef204d1-a1ea-45be-8d31-b4143f67354f",
 }
 
 projet_ecole_1 = current_dir / "assets" / "Projet_Ecole" / "projet_coureur.png"
@@ -64,14 +70,12 @@ with col2:
         mime="application/octet-stream",
     )
     st.write("📩", EMAIL)
-
-    st.write("#")
-    cols = st.columns(len(SOCIAL_MEDIA))
-    for index, (platform, link) in enumerate(SOCIAL_MEDIA.items()):
-        cols[index].write(f"[{platform}]({link})")
+    for platform, link in SOCIAL_MEDIA.items():
+        st.write(f"[{platform}]({link})")
 
 st.write("#")
 st.sidebar.header("Menu")
+
 selected_option = st.sidebar.selectbox("Choisir une section", ["Formations", "Expériences", "Projets", "Certificats"])
 
 if selected_option == "Formations":
