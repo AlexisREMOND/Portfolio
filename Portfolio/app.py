@@ -9,8 +9,8 @@ current_dir = Path(__file__).parent if "__file__" in locals() else Path.cwd()
 css_file = current_dir / "styles" / "main.css"
 resume_file = current_dir / "assets" / "CV_Alexis_REMOND.pdf"
 profile_pic = current_dir / "assets" / "Alexis.png"
-video_path_1 = r"C:\Users\alexl\PycharmProjects\pythonProject\test\Data_Science\Portfolio\assets\Projet_Perso\Droide.mp4"
-video_path_2 = r"C:\Users\alexl\PycharmProjects\pythonProject\test\Data_Science\Portfolio\assets\Projet_Perso\projet_perso_3.mp4"
+video_path_1 = str(current_dir / "assets" / "Projet_Perso" / "Droide.mp4")
+video_path_2 = str(current_dir / "assets" / "Projet_Perso" / "projet_perso_3.mp4")
 
 
 PAGE_TITLE = "Portfolio | Alexis REMOND"
