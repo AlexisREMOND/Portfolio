@@ -42,7 +42,7 @@ projet_ecole_4 = current_dir / "assets" / "Projet_Ecole" / "projet_4.png"
 projet_ecole_5 = current_dir / "assets" / "Projet_Ecole" / "projet_5.png"
 projet_ecole_6 = current_dir / "assets" / "Projet_Ecole" / "projet_6.png"
 projet_ecole_7 = current_dir / "assets" / "Projet_Ecole" / "projet_7.png"
-projet_reseau = r"C:\Users\alexl\PycharmProjects\pythonProject\test\Data_Science\Portfolio\assets\Projet_Ecole\Featuring_musique.html"
+projet_reseau = current_dir / "assets" / "Projet_Ecole" / "Featuring_musique.html"
 projet_ecole_8 = current_dir / "assets" / "Projet_Ecole" / "projet_8.png"
 
 projet_perso_1 = current_dir / "assets" / "Projet_Perso" / "Perso_2.png"
