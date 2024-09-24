@@ -11,6 +11,7 @@ resume_file = current_dir / "assets" / "CV_Alexis_REMOND.pdf"
 profile_pic = current_dir / "assets" / "Alexis.png"
 video_path_1 = str(current_dir / "assets" / "Projet_Perso" / "Droide.mp4")
 video_path_2 = str(current_dir / "assets" / "Projet_Perso" / "projet_perso_3.mp4")
+video_path_3 = str(current_dir / "assets" / "Projet_Perso" / "Projet_snake.mp4")
 
 
 PAGE_TITLE = "Portfolio | Alexis REMOND"
@@ -154,6 +155,11 @@ elif selected_option == "Projets":
     projet_type = st.sidebar.selectbox("Type de projet", ["Perso", "Ecole"])
 
     if projet_type == "Perso":
+        st.subheader("🐍️ Snake Game | Juin 2024 ")
+        st.video(video_path_3)
+        st.write("Pour ce projet, nous pouvons jouer au célèbre jeu snake en passant des niveaux et mettre des bombes en tant qu'obstacles")
+        st.write("---")
+
         st.subheader("🖱️ Souris d'ordinateur controlée par les yeux | mars 2024 ")
         st.video(video_path_2)
         st.write("Durant ce projet, nous pouvons contrôler la souris en fonction de notre regard, et cliquer grâce à un clin d'oeil")
